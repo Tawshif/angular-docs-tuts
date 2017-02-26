@@ -15,6 +15,7 @@ const HEROES: Hero[] = [
   { id: 19, name: 'Magma' },
   { id: 20, name: 'Tornado' }
 ];
+
 @Component({
   selector: 'my-component',
   template: `
@@ -36,7 +37,6 @@ const HEROES: Hero[] = [
       </div>
     </div>
   `,
-
 })
 
 export class AppComponent  { 
@@ -46,5 +46,4 @@ export class AppComponent  {
 	onSelect(hero: Hero): void {
     	this.selectedHero = hero;
   	}
-
 }
